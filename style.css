@@ -80,7 +80,7 @@ table {
 
 
 body {
-    background-image: url(/img/food.webp);
+    background-image: url(./img/food.webp);
 }
 
 .container .icon img {
@@ -98,7 +98,7 @@ body {
     height: 850px;
     margin: auto;
     margin-top: 35px;
-    background-image: url(/img/Home.jpg);
+    background-image: url(./img/Home.jpg);
     background-size: 100%;
     box-shadow:0 5px 50px #00000059;
     background-color: rgb(255, 255, 255);
