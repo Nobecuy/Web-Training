@@ -45,8 +45,43 @@ table {
 
 /* STYLE */
 
+/*ALL*/
+
+.all {
+    box-shadow:0 5px 20px #00000042;
+    position: relative;
+    width: 1150px;
+    height: 925px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+
+.all {
+    transform: translateY(20px);
+    animation: all 1.5s ease-out forwards;
+}
+
+@keyframes all {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* HEADER */
+
+
+body {
+    background-image: url(/img/food.webp);
+}
 
 .container .icon img {
     width: 100px;
@@ -57,6 +92,8 @@ table {
 }
 
 .container {
+    position: relative;
+    top: 35px;
     width: 1100px;
     height: 850px;
     margin: auto;
@@ -66,6 +103,7 @@ table {
     box-shadow:0 5px 50px #00000059;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat; /* Jangan ulang gambar */
+    
 }
 
 .header {
@@ -96,8 +134,7 @@ table {
 /* BODY1 */
 
 .container {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
 }
 
 
@@ -141,15 +178,15 @@ table {
     box-shadow:0 5px 20px #00000042;
 }
 
-.container .body .glass img{
-   border-radius: 10%;
+ .glass img{
+   border-radius: 15%;
    position: relative;
    top: 10px;
    box-shadow:0 5px 20px #00000042;
  }
 
 
- .container .body .glass .button {
+  .glass .button {
      background-color: #FEDA5C;
      width: 120px;
      height: 40px;
@@ -161,7 +198,9 @@ table {
      box-shadow:0 5px 20px #00000042;
  }
 
- .container .body .glass .button h1 {
+
+ 
+ .glass .button h1 {
     font: 20px/28px arial,sans-serif;
     font-weight: bolder;
     position: relative;
@@ -169,34 +208,43 @@ table {
     bottom: -0px;
  } 
 
+ .glass {
+    transition: 0.5s;
+ }
+ 
+ .glass .button {
+    transition: 0.3s;
+ }
 
- .container .body .glass:hover {
+
+
+  .glass:hover {
+    transform: scale(1.1);
+    transition: 0.3s
+}
+
+ .glass .button:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-.container .body .glass .button:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.container .body .glass .button a {
+ .glass .button a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.container .body .glass .button a:hover {
+ .glass .button a:hover {
     color: #ababab;
 }
 
+
 /* BODY2 */
+
 .container2 {
     width: 1100px;
     height: 650px;
     margin: auto;
     background-color:#FFE39A;
-    box-shadow:0 5px 50px #00000059;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-bottom: 50px;
 }
